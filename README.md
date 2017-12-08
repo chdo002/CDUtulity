@@ -22,4 +22,4 @@ pod package CDChatList.podspec --force  -verbose
 
 ```
 pod package CDChatList.podspec --library  --force  -verbose
-
+```
