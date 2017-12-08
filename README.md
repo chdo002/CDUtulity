@@ -1,29 +1,25 @@
 # Utility
 
-[![CI Status](http://img.shields.io/travis/chdo002/Utility.svg?style=flat)](https://travis-ci.org/chdo002/Utility)
-[![Version](https://img.shields.io/cocoapods/v/Utility.svg?style=flat)](http://cocoapods.org/pods/Utility)
-[![License](https://img.shields.io/cocoapods/l/Utility.svg?style=flat)](http://cocoapods.org/pods/Utility)
-[![Platform](https://img.shields.io/cocoapods/p/Utility.svg?style=flat)](http://cocoapods.org/pods/Utility)
+## 支持
 
-## Example
+iOS 8 +
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+## 安装
 
-## Requirements
+####  作为pod依赖 在podfile中添加
 
-## Installation
-
-Utility is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
-
-```ruby
-pod 'Utility'
+```
+pod 'CDChatList', :source => 'http://git-ma.paic.com.cn/aat/AATComponent_iOS.git'
 ```
 
-## Author
+####  作为framework 集成
 
-chdo002, 1107661983@qq.com
+```
+pod package CDChatList.podspec --force  -verbose
+```
 
-## License
+####  最为静态库集成（需要手动处理资源文件）
 
-Utility is available under the MIT license. See the LICENSE file for more info.
+```
+pod package CDChatList.podspec --library  --force  -verbose
+
