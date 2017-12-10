@@ -17,7 +17,7 @@ double CRMDeviceSystemVersion(void) {
 }
 
 
-CGSize CRMDeviceScreenSize(void) {
+CGSize CRMScreenSize(void) {
     
     static CGSize size;
     static dispatch_once_t onceToken;
@@ -46,6 +46,10 @@ CGFloat NaviH(void){
     return 44 + [[UIApplication sharedApplication] statusBarFrame].size.height;
 }
 
-
-
+CGFloat ScreenW(void){
+    return [UIScreen mainScreen].bounds.size.width;
+}
+CGFloat ScreenH(void){
+    return [UIScreen mainScreen].bounds.size.height;
+}
 

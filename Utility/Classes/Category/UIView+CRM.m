@@ -132,4 +132,11 @@
     self.frame = frame;
 }
 
+-(UIImage *)snapShot{
+    UIGraphicsBeginImageContextWithOptions(self.bounds.size, self.opaque, 0);
+    CGContextRef cot = UIGraphicsGetCurrentContext();
+    [self.layer renderInContext:cot];
+    UIImage *img = UIGraphicsGetImageFromCurrentImageContext();
+    return img;
+}
 @end

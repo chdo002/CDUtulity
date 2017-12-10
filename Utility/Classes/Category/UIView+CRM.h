@@ -40,4 +40,6 @@
 @property (nonatomic) CGPoint origin;      ///< Shortcut for frame.origin.
 @property (nonatomic) CGSize  size;        ///< Shortcut for frame.size.
 
+-(UIImage *)snapShot;
+
 @end

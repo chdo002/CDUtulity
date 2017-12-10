@@ -10,27 +10,19 @@
 // 系统版本号
 double CRMDeviceSystemVersion(void);
 
-CGSize CRMDeviceScreenSize(void);
+CGSize CRMScreenSize(void);
 
 /**
- ====================================
  颜色
- ====================================
  */
+UIColor *CRMHexColor(int hexColor); // 16位颜色
+UIColor *CRMRadomColor(void); //随机色
 
-// 16位颜色
-UIColor *CRMHexColor(int hexColor);
 
-//随机色
-UIColor *CRMRadomColor(void);
 
 /**
- ====================================
  尺寸
- ====================================
- */
-
-/**
- 导航栏高度
  */
 CGFloat NaviH(void);
+CGFloat ScreenW(void);
+CGFloat ScreenH(void);

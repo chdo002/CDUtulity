@@ -12,7 +12,10 @@
 
 #import "UITool.h"
 #import "CRMLog.h"
+
 #import "UIView+CRM.h"
+#import "UIScreen+CRM.h"
+
 
 // iOS开发 非常全的三方库、插件、大牛博客等等
 // http://blog.csdn.net/u014068781/article/details/52484821
