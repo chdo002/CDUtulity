@@ -97,17 +97,25 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ipz-Eb-esH">
                                 <rect key="frame" x="164" y="264" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="写日志"/>
                                 <connections>
                                     <action selector="log:" destination="rNJ-sd-YEF" eventType="touchUpInside" id="afR-G4-L0m"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UdR-WV-bZq">
-                                <rect key="frame" x="164" y="359" width="46" height="30"/>
+                                <rect key="frame" x="156" y="359" width="62" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="发送日志"/>
                                 <connections>
                                     <action selector="sendLogs:" destination="rNJ-sd-YEF" eventType="touchUpInside" id="bAH-sN-RXG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fQa-Tl-GfU">
+                                <rect key="frame" x="156" y="438" width="62" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="写入本地"/>
+                                <connections>
+                                    <action selector="local:" destination="rNJ-sd-YEF" eventType="touchUpInside" id="18h-7k-yXR"/>
                                 </connections>
                             </button>
                         </subviews>

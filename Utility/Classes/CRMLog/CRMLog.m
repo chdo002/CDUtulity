@@ -9,7 +9,7 @@
 #import <MessageUI/MessageUI.h>
 #import "AATHUD.h"
 
-@interface CRMLogObj()<MFMailComposeViewControllerDelegate>
+@interface CRMLogManger()<MFMailComposeViewControllerDelegate>
 {
     NSMutableString *logContent;
     NSString *logFoldDirect;
@@ -18,14 +18,14 @@
 @end
 
 
-@implementation CRMLogObj
+@implementation CRMLogManger
 
-+(CRMLogObj *)shareLog{
++(CRMLogManger *)shareLog{
     static dispatch_once_t onceToken;
-    static CRMLogObj *loger;
+    static CRMLogManger *loger;
     dispatch_once(&onceToken, ^{
         
-        loger = [[CRMLogObj alloc] init];
+        loger = [[CRMLogManger alloc] init];
         
         NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
         NSString *path = [paths objectAtIndex:0];
@@ -40,6 +40,11 @@
     });
     return loger;
 }
+
++(void)writeLogTolocal{
+    [[CRMLogManger shareLog] saveLog];
+}
+
 -(void)addlog:(NSString *)string{
     NSString *logStr;
     if (logContent) {
@@ -56,10 +61,12 @@
 }
 
 
+
 -(void)saveLog{
     if (logContent) {
-        
-        [logContent appendString:[NSString stringWithFormat:@"%@  日志结束", [self timeStr]]];
+        NSString *lastLog = [NSString stringWithFormat:@"%@  日志结束", [self timeStr]];
+        NSLog(@"%@", lastLog);
+        [logContent appendString:lastLog];
     
         NSData *data = [logContent dataUsingEncoding:NSUTF8StringEncoding];
         [data writeToFile:[self logDirect] atomically:YES];
@@ -89,23 +96,27 @@
     return [logFoldDirect stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.txt", [self timeStr]]];
 }
 
++(void)openSettings{
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:UIApplicationOpenSettingsURLString]];
+}
 
-+(void)sendLogFile:(NSArray *)Recipients CcRecipients:(NSArray *)CcRecipients{
-    NSArray * subPaths = [[CRMLogObj shareLog]->manger subpathsAtPath:[CRMLogObj shareLog]->logFoldDirect];
++(NSError *)sendLogFile:(NSArray *)Recipients CcRecipients:(NSArray *)CcRecipients{
+    
+    NSArray * subPaths = [[CRMLogManger shareLog]->manger subpathsAtPath:[CRMLogManger shareLog]->logFoldDirect];
     if (subPaths.count == 0) {
-        [AATHUD showInfo:@"没有日志"];
-        return;
+        NSError *err = [NSError errorWithDomain:@"没有日志" code:-1 userInfo:nil];
+        return err;
     }
     
     if (![MFMailComposeViewController canSendMail]){
-        [AATHUD showInfo:@"没有设置邮箱账户"];
-        return;
+        NSError *err = [NSError errorWithDomain:@"没有设置邮箱账户" code:-2 userInfo:nil];
+        return err;
     }
     
     // 创建邮件发送界面
     MFMailComposeViewController *mailCompose = [[MFMailComposeViewController alloc] init];
     // 设置邮件代理
-    [mailCompose setMailComposeDelegate:[CRMLogObj shareLog]];
+    [mailCompose setMailComposeDelegate:[CRMLogManger shareLog]];
     // 设置收件人
     [mailCompose setToRecipients:Recipients];
     // 设置抄送人
@@ -122,18 +133,19 @@
     
     //添加附件
     for (NSString *subPath in subPaths) {
-        NSString *filePath = [[CRMLogObj shareLog]->logFoldDirect stringByAppendingPathComponent:subPath];
+        NSString *filePath = [[CRMLogManger shareLog]->logFoldDirect stringByAppendingPathComponent:subPath];
         NSData *data = [NSData dataWithContentsOfFile:filePath];
         [mailCompose addAttachmentData:data mimeType:@"txt" fileName:subPath];
     }
     
     // 弹出邮件发送视图
     [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:mailCompose animated:YES completion:nil];
+    return nil;
 }
 
 -(void)mailComposeController:(MFMailComposeViewController *)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error{
     if (error) {
-        [AATHUD showInfo:error.description];
+        [AATHUD showInfo:error.description  andDismissAfter:0.6];
     }
     [controller dismissViewControllerAnimated:YES completion:nil];
 }
@@ -163,6 +175,6 @@ void CRMLog(NSString *log) {
 //        }
 //    }
 //    va_end(args);
-    [[CRMLogObj shareLog] addlog:log];
+    [[CRMLogManger shareLog] addlog:log];
 }
 

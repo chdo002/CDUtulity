@@ -10,6 +10,12 @@
 
 void CRMLog(NSString *log);
 
-@interface CRMLogObj : NSObject
-+(void)sendLogFile:(NSArray *)Recipients CcRecipients:(NSArray *)CcRecipients;
+@interface CRMLogManger : NSObject
++(void)writeLogTolocal;
+
+// 用户没有添加邮箱账号时，需引导去设置页添加
++(void)openSettings;
+
+
++(NSError *)sendLogFile:(NSArray *)Recipients CcRecipients:(NSArray *)CcRecipients;
 @end

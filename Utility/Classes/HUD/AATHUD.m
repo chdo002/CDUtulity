@@ -11,6 +11,8 @@ static const CGFloat AATHUDVerticalSpacing = 12.0f;
 static const CGFloat AATHUDHorizontalSpacing = 12.0f;
 static const CGFloat AATHUDLabelSpacing = 8.0f;
 
+static const CGFloat AATHUDNONESTOP = -1.0f;
+
 @interface AATHUD()
 
 @property (strong, nonatomic, nullable) UIView *containerView;
@@ -29,7 +31,7 @@ static const CGFloat AATHUDLabelSpacing = 8.0f;
 
 
 +(void)showLoading{
-    [[self sharedView] showInfo:nil hasLoading:YES dismissAfter:0.6];
+    [[self sharedView] showInfo:nil hasLoading:YES dismissAfter:AATHUDNONESTOP];
 }
 
 +(void)showLoadingAndDismissAfter:(NSTimeInterval)duration{
@@ -37,16 +39,18 @@ static const CGFloat AATHUDLabelSpacing = 8.0f;
 }
 
 +(void)showInfo:(NSString *)infoString{
-    [self showInfo:infoString showLoading:NO];
-}
-
-+(void)showInfo:(NSString *)infoString andDismissAfter:(NSTimeInterval)duration{
-    [self showInfo:infoString showLoading:NO];
+    [self showInfo:infoString showLoading:NO andDismissAfter:AATHUDNONESTOP];
 }
 
 +(void)showInfo:(NSString *)infoString showLoading:(BOOL)showLoading{
-    [self showInfo:infoString showLoading:showLoading andDismissAfter:0.6];
+    [self showInfo:infoString showLoading:showLoading andDismissAfter:AATHUDNONESTOP];
 }
+
++(void)showInfo:(NSString *)infoString andDismissAfter:(NSTimeInterval)duration{
+    [self showInfo:infoString showLoading:NO andDismissAfter:duration];
+}
+
+// ---------------------------
 +(void)showInfo:(NSString *)infoString showLoading:(BOOL)showLoading andDismissAfter:(NSTimeInterval)duration{
     [[self sharedView] showInfo:infoString hasLoading:showLoading dismissAfter:duration];
 }
@@ -84,6 +88,10 @@ static const CGFloat AATHUDLabelSpacing = 8.0f;
                              // 更新HUD显示效果
                              [strongSelf fadeInEffects];
                          } completion:^(BOOL finished) {
+                             
+                             if (duration - AATHUDNONESTOP < 0.001) {
+                                 return;
+                             }
                              dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(duration * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
                                  [strongSelf dismissWithDelay:0 complete:nil];
                              });
@@ -218,6 +226,7 @@ static const CGFloat AATHUDLabelSpacing = 8.0f;
 - (instancetype)initWithFrame:(CGRect)frame {
     if((self = [super initWithFrame:frame])) {
         self.userInteractionEnabled = NO;
+        
         _cornerRadius = 14.0f;
         _defaultStyle = AATHUDStyleDark;
         _defaultAnimationType = AATHUDAnimationTypeNative;
@@ -322,9 +331,7 @@ static const CGFloat AATHUDLabelSpacing = 8.0f;
     self.statusLabel.center = CGPointMake(CGRectGetMidX(self.hudView.bounds), centerY);
     
     [CATransaction commit];
-    
-    
-    
+
 }
 
 -(void)updateViewHierarchy{

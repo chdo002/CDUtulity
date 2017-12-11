@@ -20,7 +20,16 @@
     
 }
 - (IBAction)sendLogs:(id)sender {
-    [CRMLogObj sendLogFile:@[@"1107661983@qq.com"] CcRecipients:nil];
+    NSError *err = [CRMLogManger sendLogFile:@[@"1107661983@qq.com"] CcRecipients:nil];
+    if (err) {
+         [AATHUD showInfo:err.domain andDismissAfter:0.6];
+        if (err.code == -1) {
+            
+        }
+        if (err.code == -2) {
+            [CRMLogManger openSettings];
+        }
+    }
 }
 - (IBAction)log:(id)sender {
     
@@ -30,6 +39,8 @@
         [strg appendFormat:@"%d",num];
     }
     CRMLog(strg);
-    
+}
+- (IBAction)local:(id)sender {
+    [CRMLogManger writeLogTolocal];
 }
 @end
