@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "NSString+MD5.h"
 #import "UIScreen+CRM.h"
 #import "UIView+CRM.h"
 #import "CRMLog.h"

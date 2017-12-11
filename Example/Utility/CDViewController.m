@@ -10,7 +10,9 @@
 #import <Utility/Utility.h>
 
 @interface CDViewController ()
-
+{
+    NSString *path;
+}
 @end
 
 @implementation CDViewController
@@ -18,6 +20,27 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+
+    path = [NSTemporaryDirectory() stringByAppendingPathComponent:@"123.png"];
+    NSData *data = UIImagePNGRepresentation([self.view snapShot]);
+    [data writeToFile:path atomically:YES];
+}
+
+
+- (IBAction)show:(UIButton *)sender {
+    
+    [AATHUD showInfo:@"121231212312123121231212312123" showLoading:YES];
+}
+
+- (IBAction)loading:(id)sender {
+    [AATHUD showLoading];
+}
+- (IBAction)noloadingInfo:(id)sender {
+    [AATHUD showInfo:@"safsdfsfsfsadf搜爱家佛is金佛山第我吉安师范"];
+}
+
+- (IBAction)dismiss:(id)sender {
+    [AATHUD dismiss];
 }
 
 - (void)didReceiveMemoryWarning
@@ -27,7 +50,8 @@
 }
 
 -(void)viewDidAppear:(BOOL)animated{
-    [self.view snapShot];
+    
+    
 }
 
 @end

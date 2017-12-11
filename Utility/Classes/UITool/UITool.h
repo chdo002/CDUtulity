@@ -26,3 +26,9 @@ UIColor *CRMRadomColor(void); //随机色
 CGFloat NaviH(void);
 CGFloat ScreenW(void);
 CGFloat ScreenH(void);
+
+
+//
+NSInteger CRMFileSizeByFileUrl(NSURL *filePath);
+NSInteger CRMFileSizeByFilePath(NSString *filePath);
+

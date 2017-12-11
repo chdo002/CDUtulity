@@ -24,6 +24,7 @@
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		8A9DB6B8B37D354A275D5192 /* Pods_Utility_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33DD03084AF22EE75DF4E244 /* Pods_Utility_Example.framework */; };
 		DB0A86691F44FE00D4CC5FD7 /* Pods_Utility_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F81FE33058AF32B60C4C8D65 /* Pods_Utility_Tests.framework */; };
+		E936A54A1FDE6AD5007FFCB8 /* LogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E936A5491FDE6AD5007FFCB8 /* LogViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,8 @@
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8A57375FF323646B2136AC2F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		931E10BFF317182B69EB9384 /* Utility.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Utility.podspec; path = ../Utility.podspec; sourceTree = "<group>"; };
+		E936A5481FDE6AD5007FFCB8 /* LogViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LogViewController.h; sourceTree = "<group>"; };
+		E936A5491FDE6AD5007FFCB8 /* LogViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LogViewController.m; sourceTree = "<group>"; };
 		F81FE33058AF32B60C4C8D65 /* Pods_Utility_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Utility_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -148,6 +151,8 @@
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* CDViewController.h */,
 				6003F5A6195388D20070C39A /* CDViewController.m */,
+				E936A5481FDE6AD5007FFCB8 /* LogViewController.h */,
+				E936A5491FDE6AD5007FFCB8 /* LogViewController.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -409,6 +414,7 @@
 				6003F59E195388D20070C39A /* CDAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* CDViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				E936A54A1FDE6AD5007FFCB8 /* LogViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
