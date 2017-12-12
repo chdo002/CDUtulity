@@ -19,14 +19,16 @@
     [super viewDidLoad];
     
 }
+
 - (IBAction)sendLogs:(id)sender {
-    NSError *err = [CRMLogManger sendLogFile:@[@"1107661983@qq.com"] CcRecipients:nil];
+    NSError *err = CRMSendLog(@[@"1107661983@qq.com"], nil);
     if (err) {
          [AATHUD showInfo:err.domain andDismissAfter:0.6];
         if (err.code == -1) {
-            
+            // 没有日志
         }
         if (err.code == -2) {
+            // 没有邮箱账号
             [CRMLogManger openSettings];
         }
     }
@@ -41,6 +43,6 @@
     CRMLog(strg);
 }
 - (IBAction)local:(id)sender {
-    [CRMLogManger writeLogTolocal];
+    CRMLogLocallize();
 }
 @end

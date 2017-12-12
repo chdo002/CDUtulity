@@ -7,11 +7,16 @@
 //
 
 #import "CDAppDelegate.h"
+#import <Utility/Utility.h>
 
 @implementation CDAppDelegate
 
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
+    // Override point for customization after application launch.
+    CRMStartLog();
     return YES;
 }
 

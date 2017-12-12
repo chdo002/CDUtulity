@@ -8,6 +8,7 @@
 #import "CRMLog.h"
 #import <MessageUI/MessageUI.h>
 #import "AATHUD.h"
+#import "CRMCrash.h"
 
 @interface CRMLogManger()<MFMailComposeViewControllerDelegate>
 {
@@ -37,12 +38,29 @@
         [[NSNotificationCenter defaultCenter] addObserver:loger selector:@selector(saveLog) name:UIApplicationWillTerminateNotification object:nil];
         [[NSNotificationCenter defaultCenter] addObserver:loger selector:@selector(saveLog) name:UIApplicationDidReceiveMemoryWarningNotification object:nil];
         [[NSNotificationCenter defaultCenter] addObserver:loger selector:@selector(saveLog) name:UIApplicationDidEnterBackgroundNotification object:nil];
+    
     });
     return loger;
 }
 
+
 +(void)writeLogTolocal{
     [[CRMLogManger shareLog] saveLog];
+}
+
++(void)cleanLocalLog{
+    CRMLogManger *loger = [CRMLogManger shareLog];
+    [loger->manger removeItemAtPath:loger->logFoldDirect error:nil];
+}
+
+-(void)startLog {
+
+    CRMInstallUncaughtExceptionHandler();
+    
+    
+    CRMLogManger *loger = [CRMLogManger shareLog];
+    loger-> logContent = [[NSMutableString alloc] initWithString:[NSString stringWithFormat:@"%@ 日志开始\n",[loger timeStr]]];
+    NSLog(@"%@", loger-> logContent);
 }
 
 -(void)addlog:(NSString *)string{
@@ -178,3 +196,14 @@ void CRMLog(NSString *log) {
     [[CRMLogManger shareLog] addlog:log];
 }
 
+void CRMStartLog(void){
+    [[CRMLogManger shareLog] startLog];
+}
+
+void CRMLogLocallize(void){
+    [[CRMLogManger shareLog] saveLog];
+}
+
+NSError *CRMSendLog(NSArray *Recipients, NSArray *CcRecipients){
+    return [CRMLogManger sendLogFile:Recipients CcRecipients:CcRecipients];
+}

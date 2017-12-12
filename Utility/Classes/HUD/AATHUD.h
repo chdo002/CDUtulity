@@ -34,4 +34,9 @@ typedef NS_ENUM(NSUInteger, AATHUDAnimationType) {
 +(void)showInfo:(NSString *)infoString showLoading:(BOOL)showLoading andDismissAfter:(NSTimeInterval)duration;
 
 +(void)dismiss;
+
+
++(void)alert:(NSString *)info message:(NSString *)msg;
++(void)alert:(NSString *)info message:(NSString *)msg confirm:(void(^)(void))comfirm;
++(void)alert:(NSString *)info message:(NSString *)msg confirm:(void(^)(void))comfirm cancle:(void(^)(void))cancle;
 @end

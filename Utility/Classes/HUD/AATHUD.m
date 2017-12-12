@@ -77,8 +77,9 @@ static const CGFloat AATHUDNONESTOP = -1.0f;
         
         // 更新位置
         [strongSelf updateHUDFrame:showLoading];
-        
-        strongSelf.hudView.transform = strongSelf.hudView.transform = CGAffineTransformScale(strongSelf.hudView.transform, 1/1.1f, 1/1.1f);
+//        if (!strongSelf.hudView.effect) {
+         strongSelf.hudView.transform = strongSelf.hudView.transform = CGAffineTransformScale(strongSelf.hudView.transform, 1/1.1f, 1/1.1f);
+//        }
         
         [UIView animateWithDuration:0.15
                               delay:0
@@ -262,6 +263,7 @@ static const CGFloat AATHUDNONESTOP = -1.0f;
 
 - (void)fadeOutEffects {
     // Remove background color
+    self.hudView.effect = nil;
     self.hudView.backgroundColor = [UIColor clearColor];
     self.statusLabel.alpha = 0.0f;
     self.indefiniteAnimatedView.alpha = 0.0f;
@@ -341,5 +343,34 @@ static const CGFloat AATHUDNONESTOP = -1.0f;
         [self.superview bringSubviewToFront:self];
     }
 }
+
+#pragma mark 警告框
+
++(void)alert:(NSString *)info message:(NSString *)msg{
+    [self alert:info message:msg confirm:nil cancle:nil];
+}
+
++(void)alert:(NSString *)info message:(NSString *)msg confirm:(void(^)(void))comfirm{
+    [self alert:info message:msg confirm:comfirm cancle:nil];
+}
+
++(void)alert:(NSString *)info message:(NSString *)msg confirm:(void(^)(void))comfirm cancle:(void(^)(void))cancle{
+    UIAlertController *alertVC = [UIAlertController alertControllerWithTitle:info message:msg preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *comfirmAc = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+//        if (comfirm) {
+            comfirm();
+//        }
+    }];
+    UIAlertAction *comfirmCa = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+        cancle();
+    }];
+    
+    [alertVC addAction:comfirmAc];
+    if (cancle) {
+        [alertVC addAction:comfirmCa];
+    }
+    [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:alertVC animated:YES completion:nil];
+}
+
 
 @end
