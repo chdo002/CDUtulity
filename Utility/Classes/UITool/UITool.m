@@ -41,7 +41,9 @@ UIColor *CRMHexColor(int hexColor){
 UIColor *CRMRadomColor(){
     return [UIColor colorWithRed:arc4random_uniform(255)/255.0 green:arc4random_uniform(255)/255.0 blue:arc4random_uniform(255)/255.0 alpha:1];
 }
-
+UIColor *RGB(CGFloat A, CGFloat B, CGFloat C){
+    return [UIColor colorWithRed:A/255.0 green:B/255.0 blue:C/255.0 alpha:1.0];
+}
 CGFloat NaviH(void){
     return 44 + [[UIApplication sharedApplication] statusBarFrame].size.height;
 }
