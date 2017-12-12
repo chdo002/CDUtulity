@@ -131,8 +131,8 @@
 
 
 +(NSString*)createMsgId{
-    long randNumber = (arc4random()%10000000000) + 10000000000;                                  // 随机数；
-    NSString *rand = [NSString stringWithFormat:@"%ld" ,randNumber] ;
+    long long randNumber = (arc4random()%10000000000) + 10000000000;                                  // 随机数；
+    NSString *rand = [NSString stringWithFormat:@"%lld" ,randNumber] ;
     NSString *msgId = [NSString stringWithFormat:@"m%@%@" ,[NSString dateTimeStamp], rand ];
     return msgId;
     
