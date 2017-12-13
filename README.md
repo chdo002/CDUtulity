@@ -9,7 +9,7 @@ iOS 8 +
 ####  作为pod依赖 在podfile中添加
 
 ```
-pod 'CDChatList', :source => 'http://git-ma.paic.com.cn/aat/AATComponent_iOS.git'
+pod 'Utility', :source => 'http://git-ma.paic.com.cn/aat/AATComponent_iOS.git'
 ```
 
 ####  作为framework 集成
