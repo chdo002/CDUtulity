@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Utility'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'AAT.'
 
   s.description      = <<-DESC
@@ -11,7 +11,7 @@ TODO: Add long description of the pod here.
   s.homepage         = 'http://git-ma.paic.com.cn/EX-CHENDONG001/Utility_iOS'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'chdo002' => '1107661983@qq.com' }
-  s.source           = { :git => 'http://git-ma.paic.com.cn/EX-CHENDONG001/Utility_iOS.git', :tag => s.version.to_s }
+  s.source           = { :git => 'http://git-ma.paic.com.cn/aat/Utility_iOS.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '8.0'
 
