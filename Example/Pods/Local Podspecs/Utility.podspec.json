@@ -1,6 +1,6 @@
 {
   "name": "Utility",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "summary": "AAT.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "http://git-ma.paic.com.cn/EX-CHENDONG001/Utility_iOS",
@@ -12,8 +12,8 @@
     "chdo002": "1107661983@qq.com"
   },
   "source": {
-    "git": "http://git-ma.paic.com.cn/EX-CHENDONG001/Utility_iOS.git",
-    "tag": "0.1.0"
+    "git": "http://git-ma.paic.com.cn/aat/Utility_iOS.git",
+    "tag": "0.1.1"
   },
   "platforms": {
     "ios": "8.0"

@@ -178,8 +178,8 @@
 @end
 
 
-void CRMLog(NSString *log) {
-//
+void CRMLog(id log) {
+//    可变变量
 //    va_list args;
 //
 //    if (format) {
@@ -193,7 +193,21 @@ void CRMLog(NSString *log) {
 //        }
 //    }
 //    va_end(args);
-    [[CRMLogManger shareLog] addlog:log];
+    NSString *logStr;
+    if ([log isKindOfClass:[NSArray class]] || [log isKindOfClass:[NSDictionary class]]) {
+        SEL sel=NSSelectorFromString(@"descriptionWithLocale:");
+        if ([log respondsToSelector:sel]) {
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Warc-performSelector-leaks"
+            logStr = [NSString stringWithFormat:@"%@", [log performSelector:sel]];
+#pragma clang diagnostic pop
+        } else{
+            logStr = [NSString stringWithFormat:@"%@", log];
+        }
+    } else {
+        logStr = [NSString stringWithFormat:@"%@", log];
+    }
+    [[CRMLogManger shareLog] addlog:logStr];
 }
 
 void CRMStartLog(void){

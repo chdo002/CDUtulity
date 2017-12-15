@@ -12,7 +12,7 @@ void CRMStartLog(void);
 
 
 // 记录日志
-void CRMLog(NSString *log);
+void CRMLog(id log);
 
 
 // 将日志记录本地  可不调此方法  日志会自动记录到本地

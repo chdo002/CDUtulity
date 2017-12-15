@@ -32,3 +32,6 @@ CGFloat ScreenH(void);
 NSInteger CRMFileSizeByFileUrl(NSURL *filePath);
 NSInteger CRMFileSizeByFilePath(NSString *filePath);
 
+
+#define WeakObj(o) __weak typeof(o) o##Weak = o;
+#define StrongObj(o) __weak typeof(o) o##Strong = o;

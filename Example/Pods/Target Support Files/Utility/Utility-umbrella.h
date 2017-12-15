@@ -11,6 +11,8 @@
 #endif
 
 #import "CRMReachability.h"
+#import "NSArray+Description.h"
+#import "NSDictionary+Description.h"
 #import "NSDictionary+DictToJSON.h"
 #import "NSMutableDictionary+checkNil.h"
 #import "NSString+AATString.h"

@@ -24,6 +24,9 @@
 #import "NSDictionary+DictToJSON.h"
 #import "NSString+SLMFramework.h"
 #import "NSString+AATString.h"
+#import "NSDictionary+Description.h"
+#import "NSArray+Description.h"
+
 
 // iOS开发 非常全的三方库、插件、大牛博客等等
 // http://blog.csdn.net/u014068781/article/details/52484821
