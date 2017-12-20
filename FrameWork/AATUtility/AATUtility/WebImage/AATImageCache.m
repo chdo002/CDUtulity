@@ -15,10 +15,10 @@
 #import "NSImage+WebCache.h"
 
 // See https://github.com/rs/AATWebImage/pull/1141 for discussion
-@interface AutoPurgeCache : NSCache
+@interface AATAutoPurgeCache : NSCache
 @end
 
-@implementation AutoPurgeCache
+@implementation AATAutoPurgeCache
 
 - (nonnull instancetype)init {
     self = [super init];
@@ -93,7 +93,7 @@ FOUNDATION_STATIC_INLINE NSUInteger SDCacheCostForImage(UIImage *image) {
         _config = [[AATImageCacheConfig alloc] init];
         
         // Init the memory cache
-        _memCache = [[AutoPurgeCache alloc] init];
+        _memCache = [[AATAutoPurgeCache alloc] init];
         _memCache.name = fullNamespace;
 
         // Init the disk cache
