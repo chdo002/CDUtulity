@@ -6,6 +6,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreGraphics/CoreGraphics.h>
 
 // 系统版本号
 double CRMDeviceSystemVersion(void);
@@ -17,8 +18,6 @@ CGSize CRMScreenSize(void);
  */
 UIColor *CRMHexColor(int hexColor); // 16位颜色
 UIColor *CRMRadomColor(void); //随机色
-UIColor *RGB(CGFloat A, CGFloat B, CGFloat C);
-
 
 /**
  尺寸
