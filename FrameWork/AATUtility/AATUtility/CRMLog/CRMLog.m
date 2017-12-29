@@ -68,7 +68,7 @@
     if (logContent) {
         logStr = [NSString stringWithFormat:@"%@  %@\n",[self timeStr],string];
     } else {
-        logStr = [NSString stringWithFormat:@"%@ 日志开始\n",[self timeStr]];
+        logStr = [NSString stringWithFormat:@"%@ 日志开始\n%@",[self timeStr],string];
         logContent = [[NSMutableString alloc] init];
     }
     NSLog(@"%@",logStr);

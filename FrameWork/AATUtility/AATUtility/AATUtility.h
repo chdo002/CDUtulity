@@ -24,6 +24,8 @@ FOUNDATION_EXPORT const unsigned char AATUtilityVersionString[];
 #import "CRMCrash.h"
 #import "CRMReachability.h"
 
+#import "CRMDesCodeManage.h"
+
 #import "UIView+CRM.h"
 #import "UIScreen+CRM.h"
 #import "NSString+Extend.h"

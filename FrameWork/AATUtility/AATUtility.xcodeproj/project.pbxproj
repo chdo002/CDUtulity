@@ -10,16 +10,6 @@
 		E904F3F01FEB543D00E156ED /* UITool.m in Sources */ = {isa = PBXBuildFile; fileRef = E904F3AC1FEB543D00E156ED /* UITool.m */; };
 		E904F3F11FEB543D00E156ED /* CRMLog.m in Sources */ = {isa = PBXBuildFile; fileRef = E904F3AF1FEB543D00E156ED /* CRMLog.m */; };
 		E904F3F21FEB543D00E156ED /* CRMCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = E904F3B01FEB543D00E156ED /* CRMCrash.m */; };
-		E904F3F31FEB543D00E156ED /* NSString+SLMFramework.m in Sources */ = {isa = PBXBuildFile; fileRef = E904F3B31FEB543D00E156ED /* NSString+SLMFramework.m */; };
-		E904F3F41FEB543D00E156ED /* UIScreen+CRM.m in Sources */ = {isa = PBXBuildFile; fileRef = E904F3B51FEB543D00E156ED /* UIScreen+CRM.m */; };
-		E904F3F51FEB543D00E156ED /* NSDictionary+DictToJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = E904F3B61FEB543D00E156ED /* NSDictionary+DictToJSON.m */; };
-		E904F3F61FEB543D00E156ED /* NSDictionary+Description.m in Sources */ = {isa = PBXBuildFile; fileRef = E904F3B71FEB543D00E156ED /* NSDictionary+Description.m */; };
-		E904F3F71FEB543D00E156ED /* NSArray+Description.m in Sources */ = {isa = PBXBuildFile; fileRef = E904F3B81FEB543D00E156ED /* NSArray+Description.m */; };
-		E904F3F81FEB543D00E156ED /* NSString+AATString.m in Sources */ = {isa = PBXBuildFile; fileRef = E904F3BB1FEB543D00E156ED /* NSString+AATString.m */; };
-		E904F3F91FEB543D00E156ED /* CRMReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = E904F3C01FEB543D00E156ED /* CRMReachability.m */; };
-		E904F3FA1FEB543D00E156ED /* UIView+CRM.m in Sources */ = {isa = PBXBuildFile; fileRef = E904F3C21FEB543D00E156ED /* UIView+CRM.m */; };
-		E904F3FB1FEB543D00E156ED /* NSString+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = E904F3C31FEB543D00E156ED /* NSString+Extend.m */; };
-		E904F3FC1FEB543D00E156ED /* NSMutableDictionary+checkNil.m in Sources */ = {isa = PBXBuildFile; fileRef = E904F3C51FEB543D00E156ED /* NSMutableDictionary+checkNil.m */; };
 		E904F3FD1FEB543D00E156ED /* AATWebImageDownloaderOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = E904F3C81FEB543D00E156ED /* AATWebImageDownloaderOperation.m */; };
 		E904F3FE1FEB543D00E156ED /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = E904F3CF1FEB543D00E156ED /* UIImageView+HighlightedWebCache.m */; };
 		E904F3FF1FEB543D00E156ED /* UIImage+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = E904F3D01FEB543D00E156ED /* UIImage+GIF.m */; };
@@ -38,82 +28,101 @@
 		E904F40C1FEB543D00E156ED /* AATWebImageCompat.m in Sources */ = {isa = PBXBuildFile; fileRef = E904F3E91FEB543D00E156ED /* AATWebImageCompat.m */; };
 		E904F40D1FEB543D00E156ED /* AATImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = E904F3EA1FEB543D00E156ED /* AATImageCache.m */; };
 		E904F40E1FEB543D00E156ED /* AATHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = E904F3ED1FEB543D00E156ED /* AATHUD.m */; };
-		E904F4631FEB57CA00E156ED /* AATUtility.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E904F3EF1FEB543D00E156ED /* AATUtility.h */; };
-		E904F4641FEB57CA00E156ED /* CRMReachability.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E904F3B41FEB543D00E156ED /* CRMReachability.h */; };
-		E904F4651FEB57CA00E156ED /* UIView+CRM.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E904F3B91FEB543D00E156ED /* UIView+CRM.h */; };
-		E904F4661FEB57CA00E156ED /* NSString+Extend.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E904F3BA1FEB543D00E156ED /* NSString+Extend.h */; };
-		E904F4671FEB57CA00E156ED /* NSMutableDictionary+checkNil.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E904F3BC1FEB543D00E156ED /* NSMutableDictionary+checkNil.h */; };
-		E904F4681FEB57CA00E156ED /* NSDictionary+Description.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E904F3BD1FEB543D00E156ED /* NSDictionary+Description.h */; };
-		E904F4691FEB57CA00E156ED /* NSDictionary+DictToJSON.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E904F3BE1FEB543D00E156ED /* NSDictionary+DictToJSON.h */; };
-		E904F46A1FEB57CA00E156ED /* UIScreen+CRM.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E904F3BF1FEB543D00E156ED /* UIScreen+CRM.h */; };
-		E904F46B1FEB57CA00E156ED /* NSString+SLMFramework.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E904F3C11FEB543D00E156ED /* NSString+SLMFramework.h */; };
-		E904F46C1FEB57CA00E156ED /* NSArray+Description.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E904F3C41FEB543D00E156ED /* NSArray+Description.h */; };
-		E904F46D1FEB57CA00E156ED /* NSString+AATString.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E904F3C61FEB543D00E156ED /* NSString+AATString.h */; };
-		E904F46E1FEB57CA00E156ED /* CRMCrash.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E904F3AE1FEB543D00E156ED /* CRMCrash.h */; };
-		E904F46F1FEB57CA00E156ED /* CRMLog.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E904F3B11FEB543D00E156ED /* CRMLog.h */; };
-		E904F4701FEB57CA00E156ED /* AATHUD.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E904F3EE1FEB543D00E156ED /* AATHUD.h */; };
-		E904F4711FEB57CA00E156ED /* UITool.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E904F3AB1FEB543D00E156ED /* UITool.h */; };
-		E904F4721FEB57CA00E156ED /* AATWebImageOperation.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E904F3C91FEB543D00E156ED /* AATWebImageOperation.h */; };
-		E904F4731FEB57CA00E156ED /* AATWebImageManager.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E904F3CA1FEB543D00E156ED /* AATWebImageManager.h */; };
-		E904F4741FEB57CA00E156ED /* NSImage+WebCache.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E904F3CC1FEB543D00E156ED /* NSImage+WebCache.h */; };
-		E904F4751FEB57CA00E156ED /* UIImageView+WebCache.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E904F3CD1FEB543D00E156ED /* UIImageView+WebCache.h */; };
-		E904F4761FEB57CA00E156ED /* NSData+ImageContentType.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E904F3CE1FEB543D00E156ED /* NSData+ImageContentType.h */; };
-		E904F4771FEB57CA00E156ED /* UIButton+WebCache.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E904F3D11FEB543D00E156ED /* UIButton+WebCache.h */; };
-		E904F4781FEB57CA00E156ED /* UIView+WebCache.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E904F3D31FEB543D00E156ED /* UIView+WebCache.h */; };
-		E904F4791FEB57CA00E156ED /* UIView+WebCacheOperation.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E904F3D41FEB543D00E156ED /* UIView+WebCacheOperation.h */; };
-		E904F47A1FEB57CA00E156ED /* UIImageView+HighlightedWebCache.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E904F3D51FEB543D00E156ED /* UIImageView+HighlightedWebCache.h */; };
-		E904F47B1FEB57CA00E156ED /* UIImage+MultiFormat.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E904F3DB1FEB543D00E156ED /* UIImage+MultiFormat.h */; };
-		E904F47C1FEB57CA00E156ED /* UIImage+GIF.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E904F3DD1FEB543D00E156ED /* UIImage+GIF.h */; };
-		E904F47D1FEB57CA00E156ED /* AATWebImageDecoder.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E904F3DE1FEB543D00E156ED /* AATWebImageDecoder.h */; };
-		E904F47E1FEB57CA00E156ED /* AATWebImageCompat.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E904F3DF1FEB543D00E156ED /* AATWebImageCompat.h */; };
-		E904F47F1FEB57CA00E156ED /* AATImageCacheConfig.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E904F3E01FEB543D00E156ED /* AATImageCacheConfig.h */; };
-		E904F4801FEB57CA00E156ED /* AATImageCache.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E904F3E21FEB543D00E156ED /* AATImageCache.h */; };
-		E904F4811FEB57CA00E156ED /* AATWebImageDownloaderOperation.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E904F3E61FEB543D00E156ED /* AATWebImageDownloaderOperation.h */; };
-		E904F4821FEB57CA00E156ED /* AATWebImageDownloader.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E904F3E71FEB543D00E156ED /* AATWebImageDownloader.h */; };
-		E904F4831FEB57CA00E156ED /* AATWebImagePrefetcher.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E904F3EB1FEB543D00E156ED /* AATWebImagePrefetcher.h */; };
+		E904F4631FEB57CA00E156ED /* AATUtility.h in Copy Files (36 items) */ = {isa = PBXBuildFile; fileRef = E904F3EF1FEB543D00E156ED /* AATUtility.h */; };
+		E904F46E1FEB57CA00E156ED /* CRMCrash.h in Copy Files (36 items) */ = {isa = PBXBuildFile; fileRef = E904F3AE1FEB543D00E156ED /* CRMCrash.h */; };
+		E904F46F1FEB57CA00E156ED /* CRMLog.h in Copy Files (36 items) */ = {isa = PBXBuildFile; fileRef = E904F3B11FEB543D00E156ED /* CRMLog.h */; };
+		E904F4701FEB57CA00E156ED /* AATHUD.h in Copy Files (36 items) */ = {isa = PBXBuildFile; fileRef = E904F3EE1FEB543D00E156ED /* AATHUD.h */; };
+		E904F4711FEB57CA00E156ED /* UITool.h in Copy Files (36 items) */ = {isa = PBXBuildFile; fileRef = E904F3AB1FEB543D00E156ED /* UITool.h */; };
+		E904F4721FEB57CA00E156ED /* AATWebImageOperation.h in Copy Files (36 items) */ = {isa = PBXBuildFile; fileRef = E904F3C91FEB543D00E156ED /* AATWebImageOperation.h */; };
+		E904F4731FEB57CA00E156ED /* AATWebImageManager.h in Copy Files (36 items) */ = {isa = PBXBuildFile; fileRef = E904F3CA1FEB543D00E156ED /* AATWebImageManager.h */; };
+		E904F4741FEB57CA00E156ED /* NSImage+WebCache.h in Copy Files (36 items) */ = {isa = PBXBuildFile; fileRef = E904F3CC1FEB543D00E156ED /* NSImage+WebCache.h */; };
+		E904F4751FEB57CA00E156ED /* UIImageView+WebCache.h in Copy Files (36 items) */ = {isa = PBXBuildFile; fileRef = E904F3CD1FEB543D00E156ED /* UIImageView+WebCache.h */; };
+		E904F4761FEB57CA00E156ED /* NSData+ImageContentType.h in Copy Files (36 items) */ = {isa = PBXBuildFile; fileRef = E904F3CE1FEB543D00E156ED /* NSData+ImageContentType.h */; };
+		E904F4771FEB57CA00E156ED /* UIButton+WebCache.h in Copy Files (36 items) */ = {isa = PBXBuildFile; fileRef = E904F3D11FEB543D00E156ED /* UIButton+WebCache.h */; };
+		E904F4781FEB57CA00E156ED /* UIView+WebCache.h in Copy Files (36 items) */ = {isa = PBXBuildFile; fileRef = E904F3D31FEB543D00E156ED /* UIView+WebCache.h */; };
+		E904F4791FEB57CA00E156ED /* UIView+WebCacheOperation.h in Copy Files (36 items) */ = {isa = PBXBuildFile; fileRef = E904F3D41FEB543D00E156ED /* UIView+WebCacheOperation.h */; };
+		E904F47A1FEB57CA00E156ED /* UIImageView+HighlightedWebCache.h in Copy Files (36 items) */ = {isa = PBXBuildFile; fileRef = E904F3D51FEB543D00E156ED /* UIImageView+HighlightedWebCache.h */; };
+		E904F47B1FEB57CA00E156ED /* UIImage+MultiFormat.h in Copy Files (36 items) */ = {isa = PBXBuildFile; fileRef = E904F3DB1FEB543D00E156ED /* UIImage+MultiFormat.h */; };
+		E904F47C1FEB57CA00E156ED /* UIImage+GIF.h in Copy Files (36 items) */ = {isa = PBXBuildFile; fileRef = E904F3DD1FEB543D00E156ED /* UIImage+GIF.h */; };
+		E904F47D1FEB57CA00E156ED /* AATWebImageDecoder.h in Copy Files (36 items) */ = {isa = PBXBuildFile; fileRef = E904F3DE1FEB543D00E156ED /* AATWebImageDecoder.h */; };
+		E904F47E1FEB57CA00E156ED /* AATWebImageCompat.h in Copy Files (36 items) */ = {isa = PBXBuildFile; fileRef = E904F3DF1FEB543D00E156ED /* AATWebImageCompat.h */; };
+		E904F47F1FEB57CA00E156ED /* AATImageCacheConfig.h in Copy Files (36 items) */ = {isa = PBXBuildFile; fileRef = E904F3E01FEB543D00E156ED /* AATImageCacheConfig.h */; };
+		E904F4801FEB57CA00E156ED /* AATImageCache.h in Copy Files (36 items) */ = {isa = PBXBuildFile; fileRef = E904F3E21FEB543D00E156ED /* AATImageCache.h */; };
+		E904F4811FEB57CA00E156ED /* AATWebImageDownloaderOperation.h in Copy Files (36 items) */ = {isa = PBXBuildFile; fileRef = E904F3E61FEB543D00E156ED /* AATWebImageDownloaderOperation.h */; };
+		E904F4821FEB57CA00E156ED /* AATWebImageDownloader.h in Copy Files (36 items) */ = {isa = PBXBuildFile; fileRef = E904F3E71FEB543D00E156ED /* AATWebImageDownloader.h */; };
+		E904F4831FEB57CA00E156ED /* AATWebImagePrefetcher.h in Copy Files (36 items) */ = {isa = PBXBuildFile; fileRef = E904F3EB1FEB543D00E156ED /* AATWebImagePrefetcher.h */; };
+		E9C33FDE1FF620B20011BBE2 /* NSString+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C33FCA1FF620B10011BBE2 /* NSString+Extend.m */; };
+		E9C33FDF1FF620B20011BBE2 /* CRMReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C33FCB1FF620B10011BBE2 /* CRMReachability.m */; };
+		E9C33FE01FF620B20011BBE2 /* NSArray+Description.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C33FCC1FF620B10011BBE2 /* NSArray+Description.m */; };
+		E9C33FE11FF620B20011BBE2 /* NSDictionary+Description.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C33FCD1FF620B10011BBE2 /* NSDictionary+Description.m */; };
+		E9C33FE21FF620B20011BBE2 /* NSDictionary+DictToJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C33FCE1FF620B10011BBE2 /* NSDictionary+DictToJSON.m */; };
+		E9C33FE31FF620B20011BBE2 /* NSMutableDictionary+checkNil.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C33FD51FF620B20011BBE2 /* NSMutableDictionary+checkNil.m */; };
+		E9C33FE41FF620B20011BBE2 /* UIScreen+CRM.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C33FD71FF620B20011BBE2 /* UIScreen+CRM.m */; };
+		E9C33FE51FF620B20011BBE2 /* UIView+CRM.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C33FD81FF620B20011BBE2 /* UIView+CRM.m */; };
+		E9C33FE61FF620B20011BBE2 /* NSString+AATString.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C33FD91FF620B20011BBE2 /* NSString+AATString.m */; };
+		E9C33FE71FF620B20011BBE2 /* NSString+SLMFramework.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C33FDA1FF620B20011BBE2 /* NSString+SLMFramework.m */; };
+		E9FA49021FF62285007B7C82 /* CRMDesCodeManage.m in Sources */ = {isa = PBXBuildFile; fileRef = E9FA49011FF62285007B7C82 /* CRMDesCodeManage.m */; };
+		E9FA49051FF622A3007B7C82 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = E9FA49041FF622A3007B7C82 /* GTMBase64.m */; };
+		E9FA49071FF62303007B7C82 /* CRMDesCodeManage.h in Copy Files (36 items) */ = {isa = PBXBuildFile; fileRef = E9FA49001FF62285007B7C82 /* CRMDesCodeManage.h */; };
+		E9FA49081FF62303007B7C82 /* GTMBase64.h in Copy Files (36 items) */ = {isa = PBXBuildFile; fileRef = E9FA49031FF622A2007B7C82 /* GTMBase64.h */; };
+		E9FA49091FF62303007B7C82 /* GTMDefines.h in Copy Files (36 items) */ = {isa = PBXBuildFile; fileRef = E9FA49061FF622BA007B7C82 /* GTMDefines.h */; };
+		E9FA490A1FF62303007B7C82 /* CRMReachability.h in Copy Files (36 items) */ = {isa = PBXBuildFile; fileRef = E9C33FD31FF620B10011BBE2 /* CRMReachability.h */; };
+		E9FA490B1FF62303007B7C82 /* NSArray+Description.h in Copy Files (36 items) */ = {isa = PBXBuildFile; fileRef = E9C33FDD1FF620B20011BBE2 /* NSArray+Description.h */; };
+		E9FA490C1FF62303007B7C82 /* NSDictionary+Description.h in Copy Files (36 items) */ = {isa = PBXBuildFile; fileRef = E9C33FD21FF620B10011BBE2 /* NSDictionary+Description.h */; };
+		E9FA490D1FF62303007B7C82 /* NSDictionary+DictToJSON.h in Copy Files (36 items) */ = {isa = PBXBuildFile; fileRef = E9C33FDB1FF620B20011BBE2 /* NSDictionary+DictToJSON.h */; };
+		E9FA490E1FF62303007B7C82 /* NSMutableDictionary+checkNil.h in Copy Files (36 items) */ = {isa = PBXBuildFile; fileRef = E9C33FD41FF620B10011BBE2 /* NSMutableDictionary+checkNil.h */; };
+		E9FA490F1FF62303007B7C82 /* NSString+AATString.h in Copy Files (36 items) */ = {isa = PBXBuildFile; fileRef = E9C33FCF1FF620B10011BBE2 /* NSString+AATString.h */; };
+		E9FA49101FF62303007B7C82 /* NSString+Extend.h in Copy Files (36 items) */ = {isa = PBXBuildFile; fileRef = E9C33FD61FF620B20011BBE2 /* NSString+Extend.h */; };
+		E9FA49111FF62303007B7C82 /* NSString+SLMFramework.h in Copy Files (36 items) */ = {isa = PBXBuildFile; fileRef = E9C33FD01FF620B10011BBE2 /* NSString+SLMFramework.h */; };
+		E9FA49121FF62303007B7C82 /* UIScreen+CRM.h in Copy Files (36 items) */ = {isa = PBXBuildFile; fileRef = E9C33FDC1FF620B20011BBE2 /* UIScreen+CRM.h */; };
+		E9FA49131FF62303007B7C82 /* UIView+CRM.h in Copy Files (36 items) */ = {isa = PBXBuildFile; fileRef = E9C33FD11FF620B10011BBE2 /* UIView+CRM.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		E904F39C1FEB541E00E156ED /* CopyFiles */ = {
+		E904F39C1FEB541E00E156ED /* Copy Files (36 items) */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				E904F4631FEB57CA00E156ED /* AATUtility.h in CopyFiles */,
-				E904F4641FEB57CA00E156ED /* CRMReachability.h in CopyFiles */,
-				E904F4651FEB57CA00E156ED /* UIView+CRM.h in CopyFiles */,
-				E904F4661FEB57CA00E156ED /* NSString+Extend.h in CopyFiles */,
-				E904F4671FEB57CA00E156ED /* NSMutableDictionary+checkNil.h in CopyFiles */,
-				E904F4681FEB57CA00E156ED /* NSDictionary+Description.h in CopyFiles */,
-				E904F4691FEB57CA00E156ED /* NSDictionary+DictToJSON.h in CopyFiles */,
-				E904F46A1FEB57CA00E156ED /* UIScreen+CRM.h in CopyFiles */,
-				E904F46B1FEB57CA00E156ED /* NSString+SLMFramework.h in CopyFiles */,
-				E904F46C1FEB57CA00E156ED /* NSArray+Description.h in CopyFiles */,
-				E904F46D1FEB57CA00E156ED /* NSString+AATString.h in CopyFiles */,
-				E904F46E1FEB57CA00E156ED /* CRMCrash.h in CopyFiles */,
-				E904F46F1FEB57CA00E156ED /* CRMLog.h in CopyFiles */,
-				E904F4701FEB57CA00E156ED /* AATHUD.h in CopyFiles */,
-				E904F4711FEB57CA00E156ED /* UITool.h in CopyFiles */,
-				E904F4721FEB57CA00E156ED /* AATWebImageOperation.h in CopyFiles */,
-				E904F4731FEB57CA00E156ED /* AATWebImageManager.h in CopyFiles */,
-				E904F4741FEB57CA00E156ED /* NSImage+WebCache.h in CopyFiles */,
-				E904F4751FEB57CA00E156ED /* UIImageView+WebCache.h in CopyFiles */,
-				E904F4761FEB57CA00E156ED /* NSData+ImageContentType.h in CopyFiles */,
-				E904F4771FEB57CA00E156ED /* UIButton+WebCache.h in CopyFiles */,
-				E904F4781FEB57CA00E156ED /* UIView+WebCache.h in CopyFiles */,
-				E904F4791FEB57CA00E156ED /* UIView+WebCacheOperation.h in CopyFiles */,
-				E904F47A1FEB57CA00E156ED /* UIImageView+HighlightedWebCache.h in CopyFiles */,
-				E904F47B1FEB57CA00E156ED /* UIImage+MultiFormat.h in CopyFiles */,
-				E904F47C1FEB57CA00E156ED /* UIImage+GIF.h in CopyFiles */,
-				E904F47D1FEB57CA00E156ED /* AATWebImageDecoder.h in CopyFiles */,
-				E904F47E1FEB57CA00E156ED /* AATWebImageCompat.h in CopyFiles */,
-				E904F47F1FEB57CA00E156ED /* AATImageCacheConfig.h in CopyFiles */,
-				E904F4801FEB57CA00E156ED /* AATImageCache.h in CopyFiles */,
-				E904F4811FEB57CA00E156ED /* AATWebImageDownloaderOperation.h in CopyFiles */,
-				E904F4821FEB57CA00E156ED /* AATWebImageDownloader.h in CopyFiles */,
-				E904F4831FEB57CA00E156ED /* AATWebImagePrefetcher.h in CopyFiles */,
+				E9FA49071FF62303007B7C82 /* CRMDesCodeManage.h in Copy Files (36 items) */,
+				E9FA49081FF62303007B7C82 /* GTMBase64.h in Copy Files (36 items) */,
+				E9FA49091FF62303007B7C82 /* GTMDefines.h in Copy Files (36 items) */,
+				E9FA490A1FF62303007B7C82 /* CRMReachability.h in Copy Files (36 items) */,
+				E9FA490B1FF62303007B7C82 /* NSArray+Description.h in Copy Files (36 items) */,
+				E9FA490C1FF62303007B7C82 /* NSDictionary+Description.h in Copy Files (36 items) */,
+				E9FA490D1FF62303007B7C82 /* NSDictionary+DictToJSON.h in Copy Files (36 items) */,
+				E9FA490E1FF62303007B7C82 /* NSMutableDictionary+checkNil.h in Copy Files (36 items) */,
+				E9FA490F1FF62303007B7C82 /* NSString+AATString.h in Copy Files (36 items) */,
+				E9FA49101FF62303007B7C82 /* NSString+Extend.h in Copy Files (36 items) */,
+				E9FA49111FF62303007B7C82 /* NSString+SLMFramework.h in Copy Files (36 items) */,
+				E9FA49121FF62303007B7C82 /* UIScreen+CRM.h in Copy Files (36 items) */,
+				E9FA49131FF62303007B7C82 /* UIView+CRM.h in Copy Files (36 items) */,
+				E904F4631FEB57CA00E156ED /* AATUtility.h in Copy Files (36 items) */,
+				E904F46E1FEB57CA00E156ED /* CRMCrash.h in Copy Files (36 items) */,
+				E904F46F1FEB57CA00E156ED /* CRMLog.h in Copy Files (36 items) */,
+				E904F4701FEB57CA00E156ED /* AATHUD.h in Copy Files (36 items) */,
+				E904F4711FEB57CA00E156ED /* UITool.h in Copy Files (36 items) */,
+				E904F4721FEB57CA00E156ED /* AATWebImageOperation.h in Copy Files (36 items) */,
+				E904F4731FEB57CA00E156ED /* AATWebImageManager.h in Copy Files (36 items) */,
+				E904F4741FEB57CA00E156ED /* NSImage+WebCache.h in Copy Files (36 items) */,
+				E904F4751FEB57CA00E156ED /* UIImageView+WebCache.h in Copy Files (36 items) */,
+				E904F4761FEB57CA00E156ED /* NSData+ImageContentType.h in Copy Files (36 items) */,
+				E904F4771FEB57CA00E156ED /* UIButton+WebCache.h in Copy Files (36 items) */,
+				E904F4781FEB57CA00E156ED /* UIView+WebCache.h in Copy Files (36 items) */,
+				E904F4791FEB57CA00E156ED /* UIView+WebCacheOperation.h in Copy Files (36 items) */,
+				E904F47A1FEB57CA00E156ED /* UIImageView+HighlightedWebCache.h in Copy Files (36 items) */,
+				E904F47B1FEB57CA00E156ED /* UIImage+MultiFormat.h in Copy Files (36 items) */,
+				E904F47C1FEB57CA00E156ED /* UIImage+GIF.h in Copy Files (36 items) */,
+				E904F47D1FEB57CA00E156ED /* AATWebImageDecoder.h in Copy Files (36 items) */,
+				E904F47E1FEB57CA00E156ED /* AATWebImageCompat.h in Copy Files (36 items) */,
+				E904F47F1FEB57CA00E156ED /* AATImageCacheConfig.h in Copy Files (36 items) */,
+				E904F4801FEB57CA00E156ED /* AATImageCache.h in Copy Files (36 items) */,
+				E904F4811FEB57CA00E156ED /* AATWebImageDownloaderOperation.h in Copy Files (36 items) */,
+				E904F4821FEB57CA00E156ED /* AATWebImageDownloader.h in Copy Files (36 items) */,
+				E904F4831FEB57CA00E156ED /* AATWebImagePrefetcher.h in Copy Files (36 items) */,
 			);
+			name = "Copy Files (36 items)";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -126,26 +135,6 @@
 		E904F3AF1FEB543D00E156ED /* CRMLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRMLog.m; sourceTree = "<group>"; };
 		E904F3B01FEB543D00E156ED /* CRMCrash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRMCrash.m; sourceTree = "<group>"; };
 		E904F3B11FEB543D00E156ED /* CRMLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRMLog.h; sourceTree = "<group>"; };
-		E904F3B31FEB543D00E156ED /* NSString+SLMFramework.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SLMFramework.m"; sourceTree = "<group>"; };
-		E904F3B41FEB543D00E156ED /* CRMReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRMReachability.h; sourceTree = "<group>"; };
-		E904F3B51FEB543D00E156ED /* UIScreen+CRM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScreen+CRM.m"; sourceTree = "<group>"; };
-		E904F3B61FEB543D00E156ED /* NSDictionary+DictToJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+DictToJSON.m"; sourceTree = "<group>"; };
-		E904F3B71FEB543D00E156ED /* NSDictionary+Description.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Description.m"; sourceTree = "<group>"; };
-		E904F3B81FEB543D00E156ED /* NSArray+Description.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Description.m"; sourceTree = "<group>"; };
-		E904F3B91FEB543D00E156ED /* UIView+CRM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CRM.h"; sourceTree = "<group>"; };
-		E904F3BA1FEB543D00E156ED /* NSString+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extend.h"; sourceTree = "<group>"; };
-		E904F3BB1FEB543D00E156ED /* NSString+AATString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+AATString.m"; sourceTree = "<group>"; };
-		E904F3BC1FEB543D00E156ED /* NSMutableDictionary+checkNil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+checkNil.h"; sourceTree = "<group>"; };
-		E904F3BD1FEB543D00E156ED /* NSDictionary+Description.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Description.h"; sourceTree = "<group>"; };
-		E904F3BE1FEB543D00E156ED /* NSDictionary+DictToJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+DictToJSON.h"; sourceTree = "<group>"; };
-		E904F3BF1FEB543D00E156ED /* UIScreen+CRM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScreen+CRM.h"; sourceTree = "<group>"; };
-		E904F3C01FEB543D00E156ED /* CRMReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRMReachability.m; sourceTree = "<group>"; };
-		E904F3C11FEB543D00E156ED /* NSString+SLMFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SLMFramework.h"; sourceTree = "<group>"; };
-		E904F3C21FEB543D00E156ED /* UIView+CRM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CRM.m"; sourceTree = "<group>"; };
-		E904F3C31FEB543D00E156ED /* NSString+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extend.m"; sourceTree = "<group>"; };
-		E904F3C41FEB543D00E156ED /* NSArray+Description.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Description.h"; sourceTree = "<group>"; };
-		E904F3C51FEB543D00E156ED /* NSMutableDictionary+checkNil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+checkNil.m"; sourceTree = "<group>"; };
-		E904F3C61FEB543D00E156ED /* NSString+AATString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+AATString.h"; sourceTree = "<group>"; };
 		E904F3C81FEB543D00E156ED /* AATWebImageDownloaderOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AATWebImageDownloaderOperation.m; sourceTree = "<group>"; };
 		E904F3C91FEB543D00E156ED /* AATWebImageOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AATWebImageOperation.h; sourceTree = "<group>"; };
 		E904F3CA1FEB543D00E156ED /* AATWebImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AATWebImageManager.h; sourceTree = "<group>"; };
@@ -184,6 +173,31 @@
 		E904F3ED1FEB543D00E156ED /* AATHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AATHUD.m; sourceTree = "<group>"; };
 		E904F3EE1FEB543D00E156ED /* AATHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AATHUD.h; sourceTree = "<group>"; };
 		E904F3EF1FEB543D00E156ED /* AATUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AATUtility.h; sourceTree = "<group>"; };
+		E9C33FCA1FF620B10011BBE2 /* NSString+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extend.m"; sourceTree = "<group>"; };
+		E9C33FCB1FF620B10011BBE2 /* CRMReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRMReachability.m; sourceTree = "<group>"; };
+		E9C33FCC1FF620B10011BBE2 /* NSArray+Description.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Description.m"; sourceTree = "<group>"; };
+		E9C33FCD1FF620B10011BBE2 /* NSDictionary+Description.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Description.m"; sourceTree = "<group>"; };
+		E9C33FCE1FF620B10011BBE2 /* NSDictionary+DictToJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+DictToJSON.m"; sourceTree = "<group>"; };
+		E9C33FCF1FF620B10011BBE2 /* NSString+AATString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+AATString.h"; sourceTree = "<group>"; };
+		E9C33FD01FF620B10011BBE2 /* NSString+SLMFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SLMFramework.h"; sourceTree = "<group>"; };
+		E9C33FD11FF620B10011BBE2 /* UIView+CRM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CRM.h"; sourceTree = "<group>"; };
+		E9C33FD21FF620B10011BBE2 /* NSDictionary+Description.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Description.h"; sourceTree = "<group>"; };
+		E9C33FD31FF620B10011BBE2 /* CRMReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRMReachability.h; sourceTree = "<group>"; };
+		E9C33FD41FF620B10011BBE2 /* NSMutableDictionary+checkNil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+checkNil.h"; sourceTree = "<group>"; };
+		E9C33FD51FF620B20011BBE2 /* NSMutableDictionary+checkNil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+checkNil.m"; sourceTree = "<group>"; };
+		E9C33FD61FF620B20011BBE2 /* NSString+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extend.h"; sourceTree = "<group>"; };
+		E9C33FD71FF620B20011BBE2 /* UIScreen+CRM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScreen+CRM.m"; sourceTree = "<group>"; };
+		E9C33FD81FF620B20011BBE2 /* UIView+CRM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CRM.m"; sourceTree = "<group>"; };
+		E9C33FD91FF620B20011BBE2 /* NSString+AATString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+AATString.m"; sourceTree = "<group>"; };
+		E9C33FDA1FF620B20011BBE2 /* NSString+SLMFramework.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SLMFramework.m"; sourceTree = "<group>"; };
+		E9C33FDB1FF620B20011BBE2 /* NSDictionary+DictToJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+DictToJSON.h"; sourceTree = "<group>"; };
+		E9C33FDC1FF620B20011BBE2 /* UIScreen+CRM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScreen+CRM.h"; sourceTree = "<group>"; };
+		E9C33FDD1FF620B20011BBE2 /* NSArray+Description.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Description.h"; sourceTree = "<group>"; };
+		E9FA49001FF62285007B7C82 /* CRMDesCodeManage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRMDesCodeManage.h; sourceTree = "<group>"; };
+		E9FA49011FF62285007B7C82 /* CRMDesCodeManage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRMDesCodeManage.m; sourceTree = "<group>"; };
+		E9FA49031FF622A2007B7C82 /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
+		E9FA49041FF622A3007B7C82 /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
+		E9FA49061FF622BA007B7C82 /* GTMDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -217,6 +231,7 @@
 			isa = PBXGroup;
 			children = (
 				E904F3EF1FEB543D00E156ED /* AATUtility.h */,
+				E9FA48FF1FF62285007B7C82 /* CRMDesCodeManage */,
 				E904F3B21FEB543D00E156ED /* Category */,
 				E904F3AD1FEB543D00E156ED /* CRMLog */,
 				E904F3EC1FEB543D00E156ED /* HUD */,
@@ -249,26 +264,26 @@
 		E904F3B21FEB543D00E156ED /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				E904F3B31FEB543D00E156ED /* NSString+SLMFramework.m */,
-				E904F3B41FEB543D00E156ED /* CRMReachability.h */,
-				E904F3B51FEB543D00E156ED /* UIScreen+CRM.m */,
-				E904F3B61FEB543D00E156ED /* NSDictionary+DictToJSON.m */,
-				E904F3B71FEB543D00E156ED /* NSDictionary+Description.m */,
-				E904F3B81FEB543D00E156ED /* NSArray+Description.m */,
-				E904F3B91FEB543D00E156ED /* UIView+CRM.h */,
-				E904F3BA1FEB543D00E156ED /* NSString+Extend.h */,
-				E904F3BB1FEB543D00E156ED /* NSString+AATString.m */,
-				E904F3BC1FEB543D00E156ED /* NSMutableDictionary+checkNil.h */,
-				E904F3BD1FEB543D00E156ED /* NSDictionary+Description.h */,
-				E904F3BE1FEB543D00E156ED /* NSDictionary+DictToJSON.h */,
-				E904F3BF1FEB543D00E156ED /* UIScreen+CRM.h */,
-				E904F3C01FEB543D00E156ED /* CRMReachability.m */,
-				E904F3C11FEB543D00E156ED /* NSString+SLMFramework.h */,
-				E904F3C21FEB543D00E156ED /* UIView+CRM.m */,
-				E904F3C31FEB543D00E156ED /* NSString+Extend.m */,
-				E904F3C41FEB543D00E156ED /* NSArray+Description.h */,
-				E904F3C51FEB543D00E156ED /* NSMutableDictionary+checkNil.m */,
-				E904F3C61FEB543D00E156ED /* NSString+AATString.h */,
+				E9C33FD31FF620B10011BBE2 /* CRMReachability.h */,
+				E9C33FCB1FF620B10011BBE2 /* CRMReachability.m */,
+				E9C33FDD1FF620B20011BBE2 /* NSArray+Description.h */,
+				E9C33FCC1FF620B10011BBE2 /* NSArray+Description.m */,
+				E9C33FD21FF620B10011BBE2 /* NSDictionary+Description.h */,
+				E9C33FCD1FF620B10011BBE2 /* NSDictionary+Description.m */,
+				E9C33FDB1FF620B20011BBE2 /* NSDictionary+DictToJSON.h */,
+				E9C33FCE1FF620B10011BBE2 /* NSDictionary+DictToJSON.m */,
+				E9C33FD41FF620B10011BBE2 /* NSMutableDictionary+checkNil.h */,
+				E9C33FD51FF620B20011BBE2 /* NSMutableDictionary+checkNil.m */,
+				E9C33FCF1FF620B10011BBE2 /* NSString+AATString.h */,
+				E9C33FD91FF620B20011BBE2 /* NSString+AATString.m */,
+				E9C33FD61FF620B20011BBE2 /* NSString+Extend.h */,
+				E9C33FCA1FF620B10011BBE2 /* NSString+Extend.m */,
+				E9C33FD01FF620B10011BBE2 /* NSString+SLMFramework.h */,
+				E9C33FDA1FF620B20011BBE2 /* NSString+SLMFramework.m */,
+				E9C33FDC1FF620B20011BBE2 /* UIScreen+CRM.h */,
+				E9C33FD71FF620B20011BBE2 /* UIScreen+CRM.m */,
+				E9C33FD11FF620B10011BBE2 /* UIView+CRM.h */,
+				E9C33FD81FF620B20011BBE2 /* UIView+CRM.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -332,6 +347,18 @@
 			path = HUD;
 			sourceTree = "<group>";
 		};
+		E9FA48FF1FF62285007B7C82 /* CRMDesCodeManage */ = {
+			isa = PBXGroup;
+			children = (
+				E9FA49001FF62285007B7C82 /* CRMDesCodeManage.h */,
+				E9FA49011FF62285007B7C82 /* CRMDesCodeManage.m */,
+				E9FA49031FF622A2007B7C82 /* GTMBase64.h */,
+				E9FA49041FF622A3007B7C82 /* GTMBase64.m */,
+				E9FA49061FF622BA007B7C82 /* GTMDefines.h */,
+			);
+			path = CRMDesCodeManage;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -341,7 +368,7 @@
 			buildPhases = (
 				E904F39A1FEB541E00E156ED /* Sources */,
 				E904F39B1FEB541E00E156ED /* Frameworks */,
-				E904F39C1FEB541E00E156ED /* CopyFiles */,
+				E904F39C1FEB541E00E156ED /* Copy Files (36 items) */,
 			);
 			buildRules = (
 			);
@@ -390,36 +417,38 @@
 			buildActionMask = 2147483647;
 			files = (
 				E904F4051FEB543D00E156ED /* UIView+WebCache.m in Sources */,
+				E9C33FDE1FF620B20011BBE2 /* NSString+Extend.m in Sources */,
+				E9C33FE11FF620B20011BBE2 /* NSDictionary+Description.m in Sources */,
+				E9C33FE71FF620B20011BBE2 /* NSString+SLMFramework.m in Sources */,
 				E904F3F01FEB543D00E156ED /* UITool.m in Sources */,
 				E904F4091FEB543D00E156ED /* AATWebImageDecoder.m in Sources */,
 				E904F3F21FEB543D00E156ED /* CRMCrash.m in Sources */,
-				E904F3F81FEB543D00E156ED /* NSString+AATString.m in Sources */,
+				E9C33FE51FF620B20011BBE2 /* UIView+CRM.m in Sources */,
 				E904F40A1FEB543D00E156ED /* AATWebImageManager.m in Sources */,
 				E904F3FE1FEB543D00E156ED /* UIImageView+HighlightedWebCache.m in Sources */,
+				E9C33FE41FF620B20011BBE2 /* UIScreen+CRM.m in Sources */,
+				E9C33FDF1FF620B20011BBE2 /* CRMReachability.m in Sources */,
+				E9C33FE61FF620B20011BBE2 /* NSString+AATString.m in Sources */,
+				E9FA49051FF622A3007B7C82 /* GTMBase64.m in Sources */,
 				E904F4011FEB543D00E156ED /* NSData+ImageContentType.m in Sources */,
-				E904F3F91FEB543D00E156ED /* CRMReachability.m in Sources */,
 				E904F3F11FEB543D00E156ED /* CRMLog.m in Sources */,
-				E904F3FA1FEB543D00E156ED /* UIView+CRM.m in Sources */,
+				E9FA49021FF62285007B7C82 /* CRMDesCodeManage.m in Sources */,
 				E904F3FD1FEB543D00E156ED /* AATWebImageDownloaderOperation.m in Sources */,
 				E904F4001FEB543D00E156ED /* UIImage+MultiFormat.m in Sources */,
 				E904F4041FEB543D00E156ED /* UIView+WebCacheOperation.m in Sources */,
 				E904F4081FEB543D00E156ED /* AATWebImagePrefetcher.m in Sources */,
+				E9C33FE21FF620B20011BBE2 /* NSDictionary+DictToJSON.m in Sources */,
 				E904F40B1FEB543D00E156ED /* AATImageCacheConfig.m in Sources */,
 				E904F4021FEB543D00E156ED /* UIImageView+WebCache.m in Sources */,
-				E904F3F51FEB543D00E156ED /* NSDictionary+DictToJSON.m in Sources */,
-				E904F3F61FEB543D00E156ED /* NSDictionary+Description.m in Sources */,
 				E904F40C1FEB543D00E156ED /* AATWebImageCompat.m in Sources */,
 				E904F3FF1FEB543D00E156ED /* UIImage+GIF.m in Sources */,
 				E904F4071FEB543D00E156ED /* AATWebImageDownloader.m in Sources */,
 				E904F4031FEB543D00E156ED /* NSImage+WebCache.m in Sources */,
-				E904F3F31FEB543D00E156ED /* NSString+SLMFramework.m in Sources */,
 				E904F40E1FEB543D00E156ED /* AATHUD.m in Sources */,
-				E904F3F41FEB543D00E156ED /* UIScreen+CRM.m in Sources */,
-				E904F3FC1FEB543D00E156ED /* NSMutableDictionary+checkNil.m in Sources */,
+				E9C33FE31FF620B20011BBE2 /* NSMutableDictionary+checkNil.m in Sources */,
 				E904F4061FEB543D00E156ED /* UIButton+WebCache.m in Sources */,
-				E904F3F71FEB543D00E156ED /* NSArray+Description.m in Sources */,
-				E904F3FB1FEB543D00E156ED /* NSString+Extend.m in Sources */,
 				E904F40D1FEB543D00E156ED /* AATImageCache.m in Sources */,
+				E9C33FE01FF620B20011BBE2 /* NSArray+Description.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -536,6 +565,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 56W7P8272X;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -549,6 +579,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 56W7P8272X;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
