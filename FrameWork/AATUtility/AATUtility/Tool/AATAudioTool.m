@@ -141,15 +141,13 @@ NSNotificationName const AATAudioToolDidStopPlayNoti = @"AATAudioToolDidStopPlay
 }
 
 -(void)intertrptRecord{
-    dispatch_async(dispatch_get_main_queue(), ^{
-        [self.delegate aatAudioToolDidSInterrupted];
-        self.delegate = nil;
-        [self removeTimer];
-        if ([self.recorder isRecording]) {
-            CRMLog(@"中断了");
-            [self.recorder stop];
-        }
-    });
+    [self.delegate aatAudioToolDidSInterrupted];
+    self.delegate = nil;
+    [self removeTimer];
+    if ([self.recorder isRecording]) {
+        CRMLog(@"中断了");
+        [self.recorder stop];
+    }
 }
 
 
@@ -194,11 +192,10 @@ NSNotificationName const AATAudioToolDidStopPlayNoti = @"AATAudioToolDidStopPlay
         
         [self.recorder updateMeters];
         double lowPassResults = pow(10, (0.05 * [self.recorder peakPowerForChannel:0]));
-        dispatch_async(dispatch_get_main_queue(), ^{
-            [self.delegate aatAudioToolUpdateCurrentTime:self.recorder.currentTime
-                                                fromTime:startTime
-                                                   power:lowPassResults];
-        });
+        
+        [self.delegate aatAudioToolUpdateCurrentTime:self.recorder.currentTime
+                                            fromTime:startTime
+                                               power:lowPassResults];
         CRMLog([NSString stringWithFormat:@"录音中 %f --peakPower:%f",self.recorder.currentTime, lowPassResults]);
     } else {
         CRMLog(@"没有在录音，中断了");
@@ -208,15 +205,11 @@ NSNotificationName const AATAudioToolDidStopPlayNoti = @"AATAudioToolDidStopPlay
 
 #pragma mark  ---AVAudioRecorderDelegate---
 - (void)audioRecorderDidFinishRecording:(AVAudioRecorder *)recorder successfully:(BOOL)flag{
-    dispatch_async(dispatch_get_main_queue(), ^{
-        [self.delegate aatAudioToolDidStopRecord:recorder.url startTime:startTime endTime:recorder.currentTime errorInfo:nil];
-    });
+    [self.delegate aatAudioToolDidStopRecord:recorder.url startTime:startTime endTime:recorder.currentTime errorInfo:nil];
 }
 
 - (void)audioRecorderBeginInterruption:(AVAudioRecorder *)recorder{
-    dispatch_async(dispatch_get_main_queue(), ^{
-        [self.delegate aatAudioToolDidStopRecord:recorder.url startTime:startTime endTime:recorder.currentTime errorInfo:@"被打断了"];
-    });
+    [self.delegate aatAudioToolDidStopRecord:recorder.url startTime:startTime endTime:recorder.currentTime errorInfo:@"被打断了"];
 }
 
 -(void)audioRecorderEndInterruption:(AVAudioRecorder *)recorder{
@@ -232,9 +225,7 @@ NSNotificationName const AATAudioToolDidStopPlayNoti = @"AATAudioToolDidStopPlay
 }
 
 - (void)audioRecorderEncodeErrorDidOccur:(AVAudioRecorder *)recorder error:(NSError * __nullable)error{
-    dispatch_async(dispatch_get_main_queue(), ^{
-        [self.delegate aatAudioToolDidStopRecord:recorder.url startTime:startTime endTime:recorder.currentTime errorInfo:error.description];
-    });
+    [self.delegate aatAudioToolDidStopRecord:recorder.url startTime:startTime endTime:recorder.currentTime errorInfo:error.description];
 }
 
 
@@ -298,10 +289,8 @@ NSNotificationName const AATAudioToolDidStopPlayNoti = @"AATAudioToolDidStopPlay
 #pragma mark ====================================public====================================
 -(BOOL)handleError:(NSError *)err{
     if (err) {
-        dispatch_async(dispatch_get_main_queue(), ^{
-            [self.delegate aatAudioToolDidStopRecord:nil startTime:0 endTime:0 errorInfo:[NSString stringWithFormat:@"Error creating session: %@",[err description]]];
-            [self removeTimer];
-        });
+        [self.delegate aatAudioToolDidStopRecord:nil startTime:0 endTime:0 errorInfo:[NSString stringWithFormat:@"Error creating session: %@",[err description]]];
+        [self removeTimer];
         return YES;
     }
     return NO;
@@ -309,19 +298,16 @@ NSNotificationName const AATAudioToolDidStopPlayNoti = @"AATAudioToolDidStopPlay
 
 + (void)checkCameraAuthorizationGrand:(void (^)(void))permissionGranted withNoPermission:(void (^)(void))noPermission{
     AVAuthorizationStatus videoAuthStatus = [AVCaptureDevice authorizationStatusForMediaType:AVMediaTypeAudio];
-    dispatch_async(dispatch_get_main_queue(), ^{
         switch (videoAuthStatus) {
             case AVAuthorizationStatusNotDetermined:
             {
                 //第一次提示用户授权
                 [AVCaptureDevice requestAccessForMediaType:AVMediaTypeAudio completionHandler:^(BOOL granted) {
-                    dispatch_async(dispatch_get_main_queue(), ^{
-                        if (!granted) {
-                            noPermission();
-                        }else{
+                    if (!granted) {
+                        noPermission();
+                    }else{
 //                            permissionGranted();
-                        }
-                    });
+                    }
                 }];
                 break;
             }
@@ -350,7 +336,6 @@ NSNotificationName const AATAudioToolDidStopPlayNoti = @"AATAudioToolDidStopPlay
             default:
                 break;
         }
-    });
 }
 
 
