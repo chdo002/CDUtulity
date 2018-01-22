@@ -51,6 +51,7 @@
 		E904F4811FEB57CA00E156ED /* AATWebImageDownloaderOperation.h in Copy Files (36 items) */ = {isa = PBXBuildFile; fileRef = E904F3E61FEB543D00E156ED /* AATWebImageDownloaderOperation.h */; };
 		E904F4821FEB57CA00E156ED /* AATWebImageDownloader.h in Copy Files (36 items) */ = {isa = PBXBuildFile; fileRef = E904F3E71FEB543D00E156ED /* AATWebImageDownloader.h */; };
 		E904F4831FEB57CA00E156ED /* AATWebImagePrefetcher.h in Copy Files (36 items) */ = {isa = PBXBuildFile; fileRef = E904F3EB1FEB543D00E156ED /* AATWebImagePrefetcher.h */; };
+		E951C59620158E12006BBA48 /* AATAudioTool.m in Sources */ = {isa = PBXBuildFile; fileRef = E951C59520158E12006BBA48 /* AATAudioTool.m */; };
 		E9C33FDE1FF620B20011BBE2 /* NSString+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C33FCA1FF620B10011BBE2 /* NSString+Extend.m */; };
 		E9C33FDF1FF620B20011BBE2 /* CRMReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C33FCB1FF620B10011BBE2 /* CRMReachability.m */; };
 		E9C33FE01FF620B20011BBE2 /* NSArray+Description.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C33FCC1FF620B10011BBE2 /* NSArray+Description.m */; };
@@ -173,6 +174,8 @@
 		E904F3ED1FEB543D00E156ED /* AATHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AATHUD.m; sourceTree = "<group>"; };
 		E904F3EE1FEB543D00E156ED /* AATHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AATHUD.h; sourceTree = "<group>"; };
 		E904F3EF1FEB543D00E156ED /* AATUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AATUtility.h; sourceTree = "<group>"; };
+		E951C59420158E12006BBA48 /* AATAudioTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AATAudioTool.h; sourceTree = "<group>"; };
+		E951C59520158E12006BBA48 /* AATAudioTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AATAudioTool.m; sourceTree = "<group>"; };
 		E9C33FCA1FF620B10011BBE2 /* NSString+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extend.m"; sourceTree = "<group>"; };
 		E9C33FCB1FF620B10011BBE2 /* CRMReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRMReachability.m; sourceTree = "<group>"; };
 		E9C33FCC1FF620B10011BBE2 /* NSArray+Description.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Description.m"; sourceTree = "<group>"; };
@@ -231,6 +234,7 @@
 			isa = PBXGroup;
 			children = (
 				E904F3EF1FEB543D00E156ED /* AATUtility.h */,
+				E951C59320158E12006BBA48 /* Tool */,
 				E9FA48FF1FF62285007B7C82 /* CRMDesCodeManage */,
 				E904F3B21FEB543D00E156ED /* Category */,
 				E904F3AD1FEB543D00E156ED /* CRMLog */,
@@ -347,6 +351,15 @@
 			path = HUD;
 			sourceTree = "<group>";
 		};
+		E951C59320158E12006BBA48 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				E951C59420158E12006BBA48 /* AATAudioTool.h */,
+				E951C59520158E12006BBA48 /* AATAudioTool.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
 		E9FA48FF1FF62285007B7C82 /* CRMDesCodeManage */ = {
 			isa = PBXGroup;
 			children = (
@@ -419,6 +432,7 @@
 				E904F4051FEB543D00E156ED /* UIView+WebCache.m in Sources */,
 				E9C33FDE1FF620B20011BBE2 /* NSString+Extend.m in Sources */,
 				E9C33FE11FF620B20011BBE2 /* NSDictionary+Description.m in Sources */,
+				E951C59620158E12006BBA48 /* AATAudioTool.m in Sources */,
 				E9C33FE71FF620B20011BBE2 /* NSString+SLMFramework.m in Sources */,
 				E904F3F01FEB543D00E156ED /* UITool.m in Sources */,
 				E904F4091FEB543D00E156ED /* AATWebImageDecoder.m in Sources */,
