@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		72EB76D72023FC770074D498 /* CRMUserDefaultTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 72EB76D62023FC770074D498 /* CRMUserDefaultTool.m */; };
+		72EB76DA2023FC830074D498 /* AlertManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 72EB76D92023FC830074D498 /* AlertManager.m */; };
 		E904F3F01FEB543D00E156ED /* UITool.m in Sources */ = {isa = PBXBuildFile; fileRef = E904F3AC1FEB543D00E156ED /* UITool.m */; };
 		E904F3F11FEB543D00E156ED /* CRMLog.m in Sources */ = {isa = PBXBuildFile; fileRef = E904F3AF1FEB543D00E156ED /* CRMLog.m */; };
 		E904F3F21FEB543D00E156ED /* CRMCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = E904F3B01FEB543D00E156ED /* CRMCrash.m */; };
@@ -130,6 +132,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		72EB76D52023FC770074D498 /* CRMUserDefaultTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRMUserDefaultTool.h; sourceTree = "<group>"; };
+		72EB76D62023FC770074D498 /* CRMUserDefaultTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRMUserDefaultTool.m; sourceTree = "<group>"; };
+		72EB76D82023FC830074D498 /* AlertManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertManager.h; sourceTree = "<group>"; };
+		72EB76D92023FC830074D498 /* AlertManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertManager.m; sourceTree = "<group>"; };
 		E904F39E1FEB541E00E156ED /* libAATUtility.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAATUtility.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E904F3AB1FEB543D00E156ED /* UITool.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; path = UITool.h; sourceTree = "<group>"; };
 		E904F3AC1FEB543D00E156ED /* UITool.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; path = UITool.m; sourceTree = "<group>"; };
@@ -251,6 +257,8 @@
 		E904F3AA1FEB543D00E156ED /* UITool */ = {
 			isa = PBXGroup;
 			children = (
+				72EB76D82023FC830074D498 /* AlertManager.h */,
+				72EB76D92023FC830074D498 /* AlertManager.m */,
 				E904F3AB1FEB543D00E156ED /* UITool.h */,
 				E904F3AC1FEB543D00E156ED /* UITool.m */,
 			);
@@ -271,6 +279,8 @@
 		E904F3B21FEB543D00E156ED /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				72EB76D52023FC770074D498 /* CRMUserDefaultTool.h */,
+				72EB76D62023FC770074D498 /* CRMUserDefaultTool.m */,
 				E9C33FD31FF620B10011BBE2 /* CRMReachability.h */,
 				E9C33FCB1FF620B10011BBE2 /* CRMReachability.m */,
 				E9C33FDD1FF620B20011BBE2 /* NSArray+Description.h */,
@@ -445,6 +455,7 @@
 				E9C33FE51FF620B20011BBE2 /* UIView+CRM.m in Sources */,
 				E904F40A1FEB543D00E156ED /* AATWebImageManager.m in Sources */,
 				E904F3FE1FEB543D00E156ED /* UIImageView+HighlightedWebCache.m in Sources */,
+				72EB76D72023FC770074D498 /* CRMUserDefaultTool.m in Sources */,
 				E9C33FE41FF620B20011BBE2 /* UIScreen+CRM.m in Sources */,
 				E9C33FDF1FF620B20011BBE2 /* CRMReachability.m in Sources */,
 				E9C33FE61FF620B20011BBE2 /* NSString+AATString.m in Sources */,
@@ -461,6 +472,7 @@
 				E904F4021FEB543D00E156ED /* UIImageView+WebCache.m in Sources */,
 				E904F40C1FEB543D00E156ED /* AATWebImageCompat.m in Sources */,
 				E904F3FF1FEB543D00E156ED /* UIImage+GIF.m in Sources */,
+				72EB76DA2023FC830074D498 /* AlertManager.m in Sources */,
 				E904F4071FEB543D00E156ED /* AATWebImageDownloader.m in Sources */,
 				E904F4031FEB543D00E156ED /* NSImage+WebCache.m in Sources */,
 				E904F40E1FEB543D00E156ED /* AATHUD.m in Sources */,
