@@ -77,6 +77,7 @@
 		E9FA49111FF62303007B7C82 /* NSString+SLMFramework.h in Copy Files (36 items) */ = {isa = PBXBuildFile; fileRef = E9C33FD01FF620B10011BBE2 /* NSString+SLMFramework.h */; };
 		E9FA49121FF62303007B7C82 /* UIScreen+CRM.h in Copy Files (36 items) */ = {isa = PBXBuildFile; fileRef = E9C33FDC1FF620B20011BBE2 /* UIScreen+CRM.h */; };
 		E9FA49131FF62303007B7C82 /* UIView+CRM.h in Copy Files (36 items) */ = {isa = PBXBuildFile; fileRef = E9C33FD11FF620B10011BBE2 /* UIView+CRM.h */; };
+		E9FD1D72201867590044459B /* NSObject+runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = E9FD1D71201867590044459B /* NSObject+runtime.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -201,6 +202,8 @@
 		E9FA49031FF622A2007B7C82 /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
 		E9FA49041FF622A3007B7C82 /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
 		E9FA49061FF622BA007B7C82 /* GTMDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		E9FD1D70201867590044459B /* NSObject+runtime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+runtime.h"; sourceTree = "<group>"; };
+		E9FD1D71201867590044459B /* NSObject+runtime.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+runtime.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -288,6 +291,8 @@
 				E9C33FD71FF620B20011BBE2 /* UIScreen+CRM.m */,
 				E9C33FD11FF620B10011BBE2 /* UIView+CRM.h */,
 				E9C33FD81FF620B20011BBE2 /* UIView+CRM.m */,
+				E9FD1D70201867590044459B /* NSObject+runtime.h */,
+				E9FD1D71201867590044459B /* NSObject+runtime.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -461,6 +466,7 @@
 				E904F40E1FEB543D00E156ED /* AATHUD.m in Sources */,
 				E9C33FE31FF620B20011BBE2 /* NSMutableDictionary+checkNil.m in Sources */,
 				E904F4061FEB543D00E156ED /* UIButton+WebCache.m in Sources */,
+				E9FD1D72201867590044459B /* NSObject+runtime.m in Sources */,
 				E904F40D1FEB543D00E156ED /* AATImageCache.m in Sources */,
 				E9C33FE01FF620B20011BBE2 /* NSArray+Description.m in Sources */,
 			);

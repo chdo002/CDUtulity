@@ -162,6 +162,9 @@
     
 }
 
+/**
+ 毫秒级别
+ */
 +(NSString*)dateTimeStamp{
     UInt64 recordTime = [[NSDate date] timeIntervalSince1970]*1000;
     double timeInter = recordTime;
