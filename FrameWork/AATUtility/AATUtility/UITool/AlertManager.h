@@ -6,9 +6,10 @@
 //  Copyright (c) 2014年 iMac. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-typedef void (^SureBlock)();
-typedef void (^NegateBlock)();
+#import <UIKit/UIKit.h>
+
+typedef void (^SureBlock)(void);
+typedef void (^NegateBlock)(void);
 
 
 /**

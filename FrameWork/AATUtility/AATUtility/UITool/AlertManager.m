@@ -9,8 +9,8 @@
 #import "AlertManager.h"
 
 @interface AlertManager ()<UIAlertViewDelegate>
-@property (copy, nonatomic) void (^SureBlock)();
-@property (copy, nonatomic) void (^NegateBlock)();
+@property (copy, nonatomic) void (^SureBlock)(void);
+@property (copy, nonatomic) void (^NegateBlock)(void);
 @end
 
 @implementation AlertManager
