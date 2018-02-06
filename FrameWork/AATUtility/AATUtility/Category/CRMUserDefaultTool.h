@@ -10,10 +10,8 @@
 
 @interface CRMUserDefaultTool : NSObject
 
-+ (instancetype)share;
-
-- (void)saveObject:(NSString *)key value:(id)value;
-- (void)removeObjectWithKey:(NSString *)key;
-- (id)getValueForKey:(NSString *)key;
++ (void)saveObject:(NSString *)key value:(id)value;
++ (void)removeObjectWithKey:(NSString *)key;
++ (id)getValueForKey:(NSString *)key;
 
 @end

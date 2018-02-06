@@ -64,6 +64,10 @@
 		E9C33FE51FF620B20011BBE2 /* UIView+CRM.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C33FD81FF620B20011BBE2 /* UIView+CRM.m */; };
 		E9C33FE61FF620B20011BBE2 /* NSString+AATString.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C33FD91FF620B20011BBE2 /* NSString+AATString.m */; };
 		E9C33FE71FF620B20011BBE2 /* NSString+SLMFramework.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C33FDA1FF620B20011BBE2 /* NSString+SLMFramework.m */; };
+		E9E2E9B020243ED500EF2CBC /* AATAudioTool.h in Copy Files (36 items) */ = {isa = PBXBuildFile; fileRef = E951C59420158E12006BBA48 /* AATAudioTool.h */; };
+		E9E2E9B120243ED500EF2CBC /* CRMUserDefaultTool.h in Copy Files (36 items) */ = {isa = PBXBuildFile; fileRef = 72EB76D52023FC770074D498 /* CRMUserDefaultTool.h */; };
+		E9E2E9B220243ED500EF2CBC /* NSObject+runtime.h in Copy Files (36 items) */ = {isa = PBXBuildFile; fileRef = E9FD1D70201867590044459B /* NSObject+runtime.h */; };
+		E9E2E9B320243ED500EF2CBC /* AlertManager.h in Copy Files (36 items) */ = {isa = PBXBuildFile; fileRef = 72EB76D82023FC830074D498 /* AlertManager.h */; };
 		E9FA49021FF62285007B7C82 /* CRMDesCodeManage.m in Sources */ = {isa = PBXBuildFile; fileRef = E9FA49011FF62285007B7C82 /* CRMDesCodeManage.m */; };
 		E9FA49051FF622A3007B7C82 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = E9FA49041FF622A3007B7C82 /* GTMBase64.m */; };
 		E9FA49071FF62303007B7C82 /* CRMDesCodeManage.h in Copy Files (36 items) */ = {isa = PBXBuildFile; fileRef = E9FA49001FF62285007B7C82 /* CRMDesCodeManage.h */; };
@@ -89,6 +93,10 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
+				E9E2E9B020243ED500EF2CBC /* AATAudioTool.h in Copy Files (36 items) */,
+				E9E2E9B120243ED500EF2CBC /* CRMUserDefaultTool.h in Copy Files (36 items) */,
+				E9E2E9B220243ED500EF2CBC /* NSObject+runtime.h in Copy Files (36 items) */,
+				E9E2E9B320243ED500EF2CBC /* AlertManager.h in Copy Files (36 items) */,
 				E9FA49071FF62303007B7C82 /* CRMDesCodeManage.h in Copy Files (36 items) */,
 				E9FA49081FF62303007B7C82 /* GTMBase64.h in Copy Files (36 items) */,
 				E9FA49091FF62303007B7C82 /* GTMDefines.h in Copy Files (36 items) */,
