@@ -1,0 +1,3 @@
+[submodule "CDDevUtility"]
+	path = CDDevUtility
+	url = https://github.com/chdo002/CDDevUtility.git
